@@ -1,0 +1,33 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": [
+        "airbnb-typescript/base",
+        "eslint:recommended",
+        "prettier",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "arrow-body-style": "warn" // In place because arrow body style scoping fix broke sabre-soap. Should be removed once that is updated. Eslint will autofix
+      }
+    }
+  ],
+  "root": true
+}

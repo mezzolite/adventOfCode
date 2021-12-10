@@ -134,6 +134,7 @@ function checkForIncrease() {
   return increasedMeasurementAmount;
 }
 
+console.log(checkForIncrease());
 function slidingWindowIncrease() {
   let sumsOfWindow = [];
   let increasedMeasurementAmount = 0;

@@ -1018,6 +1018,8 @@ function findFinalPosition() {
   return horizontalPosition * depth;
 }
 
+console.log(findFinalPosition());
+
 function findPositionWithAim() {
   let horizontalPosition = 0;
   let depth = 0;

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "lib": ["ES2020.Promise"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "incremental": true,
+    "outDir": "build",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types", "./src/types", "./src/**/*.d.ts"]
+  },
+  "include": ["src/**/*"]
+}
