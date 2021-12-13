@@ -10,7 +10,9 @@
     "dev": "npm run build && npx nodemon --watch ./src --exec npm run dev:dist"
   },
   "dependencies": {
+    "fsp": "^0.1.2",
     "lodash": "^4.17.21",
+    "path": "^0.12.7",
     "superagent": "^6.1.0"
   },
   "devDependencies": {
